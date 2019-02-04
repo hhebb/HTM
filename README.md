@@ -1,9 +1,10 @@
-# HTM :+1: - [original theory from numenta]
+# HTM
 made by M.S.KIM
+original theory from numenta
 Hierachical Temporal Memory System
 
 
----s
+---
 ## 1. HTM??s
 
   HTM 은 대뇌 신피질 (neocortex) 의 구조를 벤치마킹한 신경망. 신피질 전역에서 기둥형태의 뉴런집합체인  micro column 구조가 발견된다.
