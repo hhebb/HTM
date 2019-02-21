@@ -16,27 +16,26 @@ HTM 은 이 신피질의 micro column 을 모방한 생체 신경망이다.
 
 ## 2. 특징
 
-비지도 학습에 해당.
-주로 시계열 데이터를 학습하고 처리.
-deep learning 과 다르게 live streaming 데이터를 학습하는데 특화되어있음.
-구조가 복잡한 대신 학습은 단순한 hebbian learning 으로 학습.
-noise tolerance 가 뛰어남.
+1. 비지도 학습에 해당.
+2. 주로 시계열 데이터를 학습하고 처리.
+3. deep learning 과 다르게 live streaming 데이터를 학습하는데 특화되어있음.
+4. 구조가 복잡한 대신 학습은 단순한 hebbian learning 으로 학습.
+5. noise tolerance 가 뛰어남.
 
 
-## 2. 구조
+## 3. 구조
 
 실제로는 6층의 구조로 되어있지만 1층만 구현해도 sequence data 를 학습할 수 있다고 함.
-
-하나의 계층에 많은 micro column 으로 구성되어 있음.
-실제로는 2차원으로 퍼져있지만 1차원으로 구현해도 됨.
-하나의 column 안에는 여러개의 cell 이 1열로 기둥형태로 구성되어짐.
-하나의 cell 은 2종류의 수상돌기가 있음.
-하나는 입력 데이터와 연결되는 proximal segment
-다른 하나는 같은 계층내 다른 cell 들과 연결되는 distal segment
-proximal segment 는 column 내 cell 들과 모두 공유되므로 이 수상돌기는 column 의 속성으로 간주한다.
-이 수상돌기에는 입력 데이터와 직접 연결되는 synapse 들을 갖고 있다.
-distal segment 는 각 cell 마다 여러개 갖고 있고 각 segment 마다 여러개의 synapse 를 갖고 있다. 
-"column - cell - segment - synapse"
+- 하나의 계층에 많은 micro column 으로 구성되어 있음.
+- 실제로는 2차원으로 퍼져있지만 1차원으로 구현해도 됨.
+- 하나의 column 안에는 여러개의 cell 이 1열로 기둥형태로 구성되어짐.
+- 하나의 cell 은 2종류의 수상돌기가 있음.
+- 하나는 입력 데이터와 연결되는 proximal segment
+- 다른 하나는 같은 계층내 다른 cell 들과 연결되는 distal segment
+- proximal segment 는 column 내 cell 들과 모두 공유되므로 이 수상돌기는 column 의 속성으로 간주한다.
+- 이 수상돌기에는 입력 데이터와 직접 연결되는 synapse 들을 갖고 있다.
+- distal segment 는 각 cell 마다 여러개 갖고 있고 각 segment 마다 여러개의 synapse 를 갖고 있다. 
+- "column - cell - segment - synapse"
 
 크게 2 가지 모듈
 1. Spatial Pooler (공간 풀러)
