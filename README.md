@@ -1,6 +1,6 @@
 # HTM
 made by M.S.KIM
-original theory from numenta
+original theory from [numenta](https://numenta.com/neuroscience-research/research-publications/papers/)
 Hierachical Temporal Memory System
 
 
@@ -51,4 +51,4 @@ proximal segment 과 관련이 있다.
 SDR 은 입력 데이터에 대해 극소수(=~2%)의 column 만 활성화 시킨것을 의미함.
 모든 column 에 대해 소수의 column 을 선택하는 방법은 천문학적으로 많아질 수 있으므로,
 수많은 정적 패턴을 인지할 수 있다.
-이외의 SDR 의 여러 특징들은 에 볼 수 있다.
+이외의 SDR 의 여러 특징들은 [여기](https://nbviewer.jupyter.org/github/Chocoberry12/HTM/blob/master/SP3.ipynb)서 볼 수 있다.
