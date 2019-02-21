@@ -36,7 +36,7 @@ noise tolerance 가 뛰어남.
 proximal segment 는 column 내 cell 들과 모두 공유되므로 이 수상돌기는 column 의 속성으로 간주한다.
 이 수상돌기에는 입력 데이터와 직접 연결되는 synapse 들을 갖고 있다.
 distal segment 는 각 cell 마다 여러개 갖고 있고 각 segment 마다 여러개의 synapse 를 갖고 있다. 
-"olumn - cell - segment - synapse"
+"column - cell - segment - synapse"
 
 크게 2 가지 모듈
 1. Spatial Pooler (공간 풀러)
@@ -51,4 +51,4 @@ proximal segment 과 관련이 있다.
 SDR 은 입력 데이터에 대해 극소수(=~2%)의 column 만 활성화 시킨것을 의미함.
 모든 column 에 대해 소수의 column 을 선택하는 방법은 천문학적으로 많아질 수 있으므로,
 수많은 정적 패턴을 인지할 수 있다.
-이외의 SDR 의 여러 특징들은 ~에 볼 수 있다.
+이외의 SDR 의 여러 특징들은 에 볼 수 있다.
